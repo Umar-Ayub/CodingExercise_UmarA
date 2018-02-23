@@ -1,0 +1,3 @@
+-system:
+	bwa: To install use sudo apt-get install bwa
+	A stable python distribution
