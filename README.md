@@ -11,7 +11,7 @@ Pass name of an output file with 'txt' replaced with 'cram' in input extension
 
 
 ```snakemake <name>.txt```
-***
+
 The command `snakemake example.txt` will use the cram file named `example.cram` as input and output the results in `example.txt`.
 
 Optional paramater `-t` sets number of cores
@@ -19,7 +19,7 @@ Preconditions: input fasta i.e. the reference genome is indexed (use : bwa index
 Time Complexity is O(n) for bwa mem: linear time complexity depending upon the length of query sequences.
 Space Complexity is O(nlogn) but could be better depending upon implementations
   
-  
+***
 # Data Section
 
 The IPython 
