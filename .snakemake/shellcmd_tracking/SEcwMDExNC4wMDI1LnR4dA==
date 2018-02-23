@@ -1,0 +1,1 @@
+bwa mem -t 1 hg38.fa HG00114.0025.cram > HG00114.0025.txt
