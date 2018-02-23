@@ -19,9 +19,7 @@ Optional paramater `-t` sets number of cores
 
 Preconditions: input fasta i.e. the reference genome is indexed (use : bwa index <ref>)
   
-Time Complexity is O(n) for bwa mem: linear time complexity depending upon the length of query sequences.
-
-Space Complexity is O(nlogn) but could be better depending upon implementations
+Time Complexity is O(n) for bwa mem: linear time complexity depending upon the length of query sequences. The Space Complexity is O(nlogn) but could be better depending upon implementations. Note that this function will break incase of a misnamed file or  if specified preconditions and not met. In that case more robust error handling and testing can be performed within Python using try except blocks. 
   
 ***
 # Data Section
