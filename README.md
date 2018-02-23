@@ -7,8 +7,8 @@ To install bwa tools in Linux Ubuntu use:
 `sudo apt-get install bwa`
 Pass name of an output file with 'txt' replaced with 'cram' in input extension
 
-```pip install snakemake
-snakemake <name>.txt```
+```pip install snakemake```
+```snakemake <name>.txt```
 ***
 Optional paramater `-t` sets number of cores
 For e.g.
