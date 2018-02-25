@@ -37,7 +37,7 @@ The provided `<in.cram>` files can then be used to test using the snakemake comm
 ***
 # Data Section
 
-The IPython Notebook CHOP_dataexercise.ipynb provided goes into extracting and analyzing data from an SQLite database. This database is a processed version of the public data set for a specific instance of a query tool. The original open MRS data model can be found here: https://wiki.openmrs.org/display/docs/Data+Model.
+The IPython Notebook CHOP_dataexercise.ipynb provided goes into extracting and analyzing data from an SQLite database using Pandas dataframes. A few visualizations are shown which can be further extended for customization. This database is a processed version of the public data set for a specific instance of a query tool. The original open MRS data model can be found here: https://wiki.openmrs.org/display/docs/Data+Model.
 
 
 
