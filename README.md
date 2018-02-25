@@ -20,13 +20,8 @@ With the optional paramater `-t` we can adjust the number of cores.
 Preconditions: input fasta i.e. the reference genome is indexed (use : bwa index <ref>)
   
 Time Complexity is O(n) for bwa mem: linear time complexity depending upon the length of query sequences. The Space Complexity is O(nlogn) but could be better depending upon implementations. Note that this function will break incase of inconsistent file names or if specified preconditions are not met. In that case more robust error handling and testing can be performed within snakemake using try except blocks as it supports the python language for issuing commands. This felxibility allows customized workflows. 
-  
-***
-# Data Section
 
-The IPython Notebook CHOP_dataexercise.ipynb provided goes into extracting and analyzing data from an SQLite database. This database is a processed version of the public data set for a specific instance of a query tool. The original open MRS data model can be found here: https://wiki.openmrs.org/display/docs/Data+Model.
-
-***
+---
 24th Feb 2018 Pipeline Section Update:
 
 An indexed reference genome is required for the Snakemake code to run which can be downloaded using 
@@ -38,6 +33,13 @@ This file is ~ 1GB and can be indexed using
 `bwa index [options] <in.fasta>`.
 
 The provided `<in.cram>` files can then be used to test using the snakemake command above.
+
+***
+# Data Section
+
+The IPython Notebook CHOP_dataexercise.ipynb provided goes into extracting and analyzing data from an SQLite database. This database is a processed version of the public data set for a specific instance of a query tool. The original open MRS data model can be found here: https://wiki.openmrs.org/display/docs/Data+Model.
+
+
 
 
 
