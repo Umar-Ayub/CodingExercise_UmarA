@@ -5,12 +5,12 @@ Sample workflow for applying the bwa mem algorithm to align a query sequence to 
 
 ### Getting started 
 To install bwa tools in Linux Ubuntu use:
-`sudo apt-get install bwa`
+`sudo apt-get install bwa`.
+
+To install snakemake use:
+```pip install snakemake``` .
+
 In order to use the tool, we pass the name of an **output** file with the extension string i.e. '.cram' replaced with '.txt' from the input extension name.
-
-```pip install snakemake``` 
-
-
 ```snakemake <name>.txt```
 
 The command `snakemake example.txt` will use the cram file named `example.cram` in the current directory as input and output the results to the same directory as `example.txt`.
@@ -19,7 +19,7 @@ With the optional paramater `-t` we can adjust the number of cores.
 
 Preconditions: input fasta i.e. the reference genome is indexed (use : bwa index <ref>)
   
-Time Complexity is O(n) for bwa mem: linear time complexity depending upon the length of query sequences. The Space Complexity is O(nlogn) but could be better depending upon implementations. Note that this function will break incase of a misnamed file or  if specified preconditions and not met. In that case more robust error handling and testing can be performed within Python using try except blocks. 
+Time Complexity is O(n) for bwa mem: linear time complexity depending upon the length of query sequences. The Space Complexity is O(nlogn) but could be better depending upon implementations. Note that this function will break incase of inconsistent file names or if specified preconditions are not met. In that case more robust error handling and testing can be performed within snakemake using try except blocks as it supports the python language for issuing commands. This felxibility allows customized workflows. 
   
 ***
 # Data Section
