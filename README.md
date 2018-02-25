@@ -6,16 +6,16 @@ Sample workflow for applying the bwa mem algorithm to align a query sequence to 
 ### Getting started 
 To install bwa tools in Linux Ubuntu use:
 `sudo apt-get install bwa`
-Pass name of an output file with 'txt' replaced with 'cram' in input extension
+In order to use the tool, we pass the name of an **output** file with the extension string i.e. '.cram' replaced with '.txt' from the input extension name.
 
 ```pip install snakemake``` 
 
 
 ```snakemake <name>.txt```
 
-The command `snakemake example.txt` will use the cram file named `example.cram` as input and output the results in `example.txt`.
+The command `snakemake example.txt` will use the cram file named `example.cram` in the current directory as input and output the results to the same directory as `example.txt`.
 
-Optional paramater `-t` sets number of cores
+With the optional paramater `-t` we can adjust the number of cores.
 
 Preconditions: input fasta i.e. the reference genome is indexed (use : bwa index <ref>)
   
