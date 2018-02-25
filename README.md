@@ -25,3 +25,21 @@ Time Complexity is O(n) for bwa mem: linear time complexity depending upon the l
 # Data Section
 
 The IPython Notebook CHOP_dataexercise.ipynb provided goes into extracting and analyzing data from an SQLite database. This database is a processed version of the public data set for a specific instance of a query tool. The original open MRS data model can be found here: https://wiki.openmrs.org/display/docs/Data+Model.
+
+***
+24th Feb 2018 Update:
+
+An indexed reference genome is required for the Snakemake code to run which can be downloaded using 
+
+`wget http://hgdownload-test.cse.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz`.
+
+This file is ~ 1GB and can be indexed using
+
+`bwa index [options] <in.fasta>`.
+
+The provided `<in.cram>` files can then be used to test using the snakemake command above.
+
+
+
+
+
